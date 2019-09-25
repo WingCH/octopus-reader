@@ -23,28 +23,11 @@ class ViewController: UIViewController, FeliCaReaderSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.reader = OctopusReader(viewController: self)
-        self.reader.get(itemTypes: [.balance])
         self.reCheck()
-    }
-    
-    func feliCaReaderSession(didRead feliCaCard: FeliCaCard) {
-        let transitICCard = feliCaCard as! OctopusCard
-        
-        DispatchQueue.main.async {
-            if var balance = transitICCard.data.balance {
-                balance = (balance - 350)/10
-                self.balance.text = "$ \(balance)"
-            } else {
-                self.balance.text = "$ -----"
-            }
-        }
-        
-        self.transitICCard = transitICCard
     }
     
     func japanNFCReaderSession(didInvalidateWithError error: Error) {
         if let readerError = error as? NFCReaderError {
-            print("hi")
             if (readerError.code != .readerSessionInvalidationErrorFirstNDEFTagRead)
                 && (readerError.code != .readerSessionInvalidationErrorUserCanceled) {
                 let alertController = UIAlertController(
@@ -62,6 +45,23 @@ class ViewController: UIViewController, FeliCaReaderSessionDelegate {
             }
         }
     }
+    
+    func feliCaReaderSession(didRead feliCaCard: FeliCaCard) {
+        let transitICCard = feliCaCard as! OctopusCard
+        
+        DispatchQueue.main.async {
+            if var balance = transitICCard.data.balance {
+                balance = (balance - 350)/10
+                self.balance.text = "$ \(balance)"
+            } else {
+                self.balance.text = "$ -----"
+            }
+        }
+        
+        self.transitICCard = transitICCard
+    }
+    
+
     
     
 }
