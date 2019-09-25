@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E2548DE233BAA31002F512F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2548DD233BAA31002F512F /* AppDelegate.swift */; };
 		0E2548E0233BAA31002F512F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2548DF233BAA31002F512F /* SceneDelegate.swift */; };
-		0E2548E2233BAA31002F512F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2548E1233BAA31002F512F /* ViewController.swift */; };
 		0E2548E5233BAA31002F512F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2548E3233BAA31002F512F /* Main.storyboard */; };
 		0E2548E8233BAA31002F512F /* octopus_reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E2548E6233BAA31002F512F /* octopus_reader.xcdatamodeld */; };
 		0E2548EA233BAA31002F512F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2548E9233BAA31002F512F /* Assets.xcassets */; };
@@ -61,6 +60,8 @@
 		0E254977233BAAB1002F512F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E254948233BAAB1002F512F /* Extensions.swift */; };
 		0E254978233BAAB1002F512F /* JapanNFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25494A233BAAB1002F512F /* JapanNFCReader.swift */; };
 		0E25497A233BAAB1002F512F /* JapanNFCReaderSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25494C233BAAB1002F512F /* JapanNFCReaderSessionDelegate.swift */; };
+		0E25497D233BB0AD002F512F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25497C233BB0AD002F512F /* ViewController.swift */; };
+		0E25497F233BB3FE002F512F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E25497E233BB3FE002F512F /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,6 @@
 		0E2548DA233BAA31002F512F /* octopus-reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "octopus-reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2548DD233BAA31002F512F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E2548DF233BAA31002F512F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E2548E1233BAA31002F512F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E2548E4233BAA31002F512F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E2548E7233BAA31002F512F /* octopus_reader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = octopus_reader.xcdatamodel; sourceTree = "<group>"; };
 		0E2548E9233BAA31002F512F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +143,9 @@
 		0E254949233BAAB1002F512F /* TRETJapanNFCReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRETJapanNFCReader.h; sourceTree = "<group>"; };
 		0E25494A233BAAB1002F512F /* JapanNFCReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapanNFCReader.swift; sourceTree = "<group>"; };
 		0E25494C233BAAB1002F512F /* JapanNFCReaderSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapanNFCReaderSessionDelegate.swift; sourceTree = "<group>"; };
+		0E25497B233BACA6002F512F /* octopus-reader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "octopus-reader.entitlements"; sourceTree = "<group>"; };
+		0E25497C233BB0AD002F512F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E25497E233BB3FE002F512F /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,14 +196,16 @@
 		0E2548DC233BAA31002F512F /* octopus-reader */ = {
 			isa = PBXGroup;
 			children = (
+				0E25497B233BACA6002F512F /* octopus-reader.entitlements */,
 				0E254910233BAAB1002F512F /* TRETJapanNFCReader */,
 				0E2548DD233BAA31002F512F /* AppDelegate.swift */,
 				0E2548DF233BAA31002F512F /* SceneDelegate.swift */,
-				0E2548E1233BAA31002F512F /* ViewController.swift */,
+				0E25497C233BB0AD002F512F /* ViewController.swift */,
 				0E2548E3233BAA31002F512F /* Main.storyboard */,
 				0E2548E9233BAA31002F512F /* Assets.xcassets */,
 				0E2548EB233BAA31002F512F /* LaunchScreen.storyboard */,
 				0E2548EE233BAA31002F512F /* Info.plist */,
+				0E25497E233BB3FE002F512F /* InfoPlist.strings */,
 				0E2548E6233BAA31002F512F /* octopus_reader.xcdatamodeld */,
 			);
 			path = "octopus-reader";
@@ -471,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2548ED233BAA31002F512F /* LaunchScreen.storyboard in Resources */,
+				0E25497F233BB3FE002F512F /* InfoPlist.strings in Resources */,
 				0E25494D233BAAB1002F512F /* Localizable.strings in Resources */,
 				0E254951233BAAB1002F512F /* JIS0208.TXT in Resources */,
 				0E2548EA233BAA31002F512F /* Assets.xcassets in Resources */,
@@ -505,7 +511,6 @@
 				0E254978233BAAB1002F512F /* JapanNFCReader.swift in Sources */,
 				0E254953233BAAB1002F512F /* DriversLicenseReaderReadFunctions.swift in Sources */,
 				0E254961233BAAB1002F512F /* RakutenEdyCardData.swift in Sources */,
-				0E2548E2233BAA31002F512F /* ViewController.swift in Sources */,
 				0E25495D233BAAB1002F512F /* FeliCaReaderSessionDelegate.swift in Sources */,
 				0E25495E233BAAB1002F512F /* RakutenEdyCard.swift in Sources */,
 				0E2548DE233BAA31002F512F /* AppDelegate.swift in Sources */,
@@ -521,6 +526,7 @@
 				0E254969233BAAB1002F512F /* NanacoCard.swift in Sources */,
 				0E254970233BAAB1002F512F /* FeliCaCard.swift in Sources */,
 				0E25496D233BAAB1002F512F /* UnivCoopICPrepaidCardData.swift in Sources */,
+				0E25497D233BB0AD002F512F /* ViewController.swift in Sources */,
 				0E254960233BAAB1002F512F /* RakutenEdyCardItemType.swift in Sources */,
 				0E254968233BAAB1002F512F /* NanacoCardItemType.swift in Sources */,
 				0E25495A233BAAB1002F512F /* TransitICCardData.swift in Sources */,
@@ -727,6 +733,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "octopus-reader/octopus-reader.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AL869FRMV6;
 				INFOPLIST_FILE = "octopus-reader/Info.plist";
@@ -737,7 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "wingch.octopus-reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -745,6 +752,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "octopus-reader/octopus-reader.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AL869FRMV6;
 				INFOPLIST_FILE = "octopus-reader/Info.plist";
@@ -755,7 +763,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "wingch.octopus-reader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
