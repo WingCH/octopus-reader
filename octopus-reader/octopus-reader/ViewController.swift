@@ -50,9 +50,9 @@ class ViewController: UIViewController, FeliCaReaderSessionDelegate {
         let transitICCard = feliCaCard as! OctopusCard
         
         DispatchQueue.main.async {
-            if var balance = transitICCard.data.balance {
-                balance = (balance - 350)/10
-                self.balance.text = "$ \(balance)"
+            if let balance = transitICCard.data.balance {
+                let realBalance = (Double(balance) - 350)/10
+                self.balance.text = "$ \(realBalance)"
             } else {
                 self.balance.text = "$ -----"
             }
