@@ -7,23 +7,23 @@
 //
 
 import Eureka
-
+import SafariServices
 
 class SettingsViewController: FormViewController {
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let octopus_type = UserDefaults.string(forKey: .octopus_type)
         
-
+        
         //https://stackoverflow.com/a/44475213/5588637
         let user_Octopus_type = User_Octopus_type(rawValue: octopus_type ?? "")
-           
         
-
+        
+        
         
         form +++ Section(header: NSLocalizedString("octopus", comment: "") , footer: "Footer Title")
             <<< ActionSheetRow<String>() {
@@ -36,10 +36,22 @@ class SettingsViewController: FormViewController {
                 UserDefaults.setByContent(content: row.value!, forKey: .octopus_type)
             }
             
-        +++ Section("Section2")
-            <<< DateRow(){
-                $0.title = "Date Row"
-                $0.value = Date(timeIntervalSinceReferenceDate: 0)
+            +++ Section("Acknowledgments")
+            <<< LabelRow () {
+                $0.title = "TRETJapanNFCReader"
+            }
+            .onCellSelection { cell, row in
+                guard let url = URL(string: "https://github.com/treastrain/TRETJapanNFCReader") else { return }
+                let svc = SFSafariViewController(url: url)
+                self.present(svc, animated: true, completion: nil)
+            }
+            <<< LabelRow () {
+                $0.title = "Eureka"
+            }
+            .onCellSelection { cell, row in
+                guard let url = URL(string: "https://github.com/xmartlabs/Eureka") else { return }
+                let svc = SFSafariViewController(url: url)
+                self.present(svc, animated: true, completion: nil)
             }
     }
 }

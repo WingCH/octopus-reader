@@ -15,9 +15,9 @@ enum User_Octopus_type:String {
     func getTypeContent() -> String {
         switch self {
         case .new:
-            return "on or after 1 October 2017"
+            return NSLocalizedString("after2017", comment: "")
         case .old:
-            return "before 1 October 2017"
+            return NSLocalizedString("before2017", comment: "")
         }
     }
     
