@@ -10,6 +10,7 @@ import UIKit
 import CoreNFC
 
 class ViewController: UIViewController, FeliCaReaderSessionDelegate {
+    
     var reader: OctopusReader!
     var transitICCard: OctopusCard?
     
@@ -23,7 +24,6 @@ class ViewController: UIViewController, FeliCaReaderSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.reader = OctopusReader(viewController: self)
-        self.reCheck()
     }
     
     func japanNFCReaderSession(didInvalidateWithError error: Error) {
