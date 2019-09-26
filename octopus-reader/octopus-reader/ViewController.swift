@@ -13,6 +13,8 @@ class ViewController: UIViewController, FeliCaReaderSessionDelegate {
     
     var reader: OctopusReader!
     var transitICCard: OctopusCard?
+    var record: Records!
+
     
     @IBOutlet weak var balance: UILabel!
     
@@ -53,6 +55,17 @@ class ViewController: UIViewController, FeliCaReaderSessionDelegate {
             if let balance = transitICCard.data.balance {
                 let realBalance = (Double(balance) - 350)/10
                 self.balance.text = "$ \(realBalance)"
+                
+                if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+                    self.record = Records(context: appDelegate.persistentContainer.viewContext)
+                    self.record.balance = realBalance
+                    self.record.create_date = Date()
+                    appDelegate.saveContext()
+                }
+                
+
+                
+                
             } else {
                 self.balance.text = "$ -----"
             }

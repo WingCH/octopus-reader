@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HistoryCell: UITableViewCell{
     
@@ -15,20 +16,35 @@ class HistoryCell: UITableViewCell{
     
 }
 
-class HistoryViewController: UITableViewController {
+class HistoryViewController: UITableViewController, NSFetchedResultsControllerDelegate  {
     
     
-    var restaurantNames = ["$00.00", "$00.00", "$00.00", "$00.00", "$00.00", "$00.00"]
+    var records: [Records] = []
+    var fetchResultController: NSFetchedResultsController<Records>!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // Fetch data from data store
+        let fetchRequest: NSFetchRequest<Records> = Records.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "create_date", ascending: false)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+            let context = appDelegate.persistentContainer.viewContext
+            self.fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+            self.fetchResultController.delegate = self
+            
+            do {
+                try self.fetchResultController.performFetch()
+                if let fetchedObjects = self.fetchResultController.fetchedObjects {
+                    records = fetchedObjects
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -40,7 +56,7 @@ class HistoryViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return restaurantNames.count
+        return records.count
     }
 
 
@@ -50,13 +66,14 @@ class HistoryViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HistoryCell
         
         // Configure the cell...
-        cell.balance?.text = restaurantNames[indexPath.row]
-        cell.date?.text = "18:00 25/09/2019"
+        cell.balance?.text = "\(records[indexPath.row].balance)"
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = " HH:mm:ss dd-MM-yyyy"
         
+        cell.date?.text = "\( dateFormatter.string(from: records[indexPath.row].create_date!))"
         
-        
-        
+
         return cell
     }
 
