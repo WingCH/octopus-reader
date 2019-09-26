@@ -99,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="80" id="Sj9-Bh-2kR" customClass="HistoryCell" customModule="octopus_reader" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="80" id="Sj9-Bh-2kR" customClass="HistoryCell" customModule="octopus_reader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sj9-Bh-2kR" id="xxh-2q-fdT">
@@ -113,18 +113,18 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t7-tD-eYv">
-                                            <rect key="frame" x="20" y="22" width="324" height="36"/>
+                                            <rect key="frame" x="36" y="22" width="272" height="36"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="7t7-tD-eYv" secondAttribute="trailing" constant="50" id="9jB-Fk-gTD"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7t7-tD-eYv" secondAttribute="trailing" constant="86" id="9jB-Fk-gTD"/>
                                         <constraint firstItem="KdH-Pt-Fze" firstAttribute="top" secondItem="xxh-2q-fdT" secondAttribute="topMargin" constant="37" id="B0A-fc-XAC"/>
-                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="KdH-Pt-Fze" secondAttribute="leading" id="O8K-dR-APq"/>
+                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="KdH-Pt-Fze" secondAttribute="leading" constant="16" id="O8K-dR-APq"/>
                                         <constraint firstItem="KdH-Pt-Fze" firstAttribute="bottom" secondItem="xxh-2q-fdT" secondAttribute="bottomMargin" id="TOK-gO-Kr8"/>
-                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="xxh-2q-fdT" secondAttribute="leadingMargin" id="fa5-Za-le5"/>
+                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="xxh-2q-fdT" secondAttribute="leadingMargin" constant="16" id="fa5-Za-le5"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="KdH-Pt-Fze" secondAttribute="trailing" constant="-3" id="iUk-Qr-dh7"/>
                                         <constraint firstItem="7t7-tD-eYv" firstAttribute="centerY" secondItem="xxh-2q-fdT" secondAttribute="centerY" id="o2U-TA-T44"/>
                                     </constraints>
@@ -144,7 +144,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asv-bX-6Ij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1432.8" y="-605.17241379310349"/>
+            <point key="canvasLocation" x="1431.8840579710145" y="-605.35714285714278"/>
         </scene>
         <!--Base Tab Bar Controller-->
         <scene sceneID="JNm-zO-l9d">
