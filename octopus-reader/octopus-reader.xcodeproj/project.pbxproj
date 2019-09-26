@@ -63,6 +63,9 @@
 		0E25497D233BB0AD002F512F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25497C233BB0AD002F512F /* ViewController.swift */; };
 		0E254984233C32CD002F512F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E254986233C32CD002F512F /* InfoPlist.strings */; };
 		0E588303233C6D09006C8E7B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E588302233C6D09006C8E7B /* HistoryViewController.swift */; };
+		221695958F9EB346F6206374 /* Pods_octopus_readerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA0703AAA42CD194A442677 /* Pods_octopus_readerTests.framework */; };
+		6E21851C554159A97E0C77CA /* Pods_octopus_reader_octopus_readerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BE49F46670CB2F56F20865 /* Pods_octopus_reader_octopus_readerUITests.framework */; };
+		EECE4555FA9A41FF0BD91D05 /* Pods_octopus_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCD76D215E41B9E87EA711F /* Pods_octopus_reader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +151,15 @@
 		0E25497C233BB0AD002F512F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E254985233C32CD002F512F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E588302233C6D09006C8E7B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		13BE49F46670CB2F56F20865 /* Pods_octopus_reader_octopus_readerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_octopus_reader_octopus_readerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8A6115309529496DED8C55 /* Pods-octopus-reader-octopus-readerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octopus-reader-octopus-readerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-octopus-reader-octopus-readerUITests/Pods-octopus-reader-octopus-readerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		43B5755580FC3803341A797A /* Pods-octopus-reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octopus-reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-octopus-reader/Pods-octopus-reader.debug.xcconfig"; sourceTree = "<group>"; };
+		7D8C38E25619973C0F2490EB /* Pods-octopus-readerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octopus-readerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-octopus-readerTests/Pods-octopus-readerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9AF5B5D146C9A58E8E91729 /* Pods-octopus-readerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octopus-readerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-octopus-readerTests/Pods-octopus-readerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAA0703AAA42CD194A442677 /* Pods_octopus_readerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_octopus_readerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCD76D215E41B9E87EA711F /* Pods_octopus_reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_octopus_reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC331DE03921F15186D9FF4B /* Pods-octopus-reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octopus-reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-octopus-reader/Pods-octopus-reader.release.xcconfig"; sourceTree = "<group>"; };
+		EF03069AC19170A13F9BF67F /* Pods-octopus-reader-octopus-readerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octopus-reader-octopus-readerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-octopus-reader-octopus-readerUITests/Pods-octopus-reader-octopus-readerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECE4555FA9A41FF0BD91D05 /* Pods_octopus_reader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221695958F9EB346F6206374 /* Pods_octopus_readerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E21851C554159A97E0C77CA /* Pods_octopus_reader_octopus_readerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +197,8 @@
 				0E2548F6233BAA31002F512F /* octopus-readerTests */,
 				0E254901233BAA31002F512F /* octopus-readerUITests */,
 				0E2548DB233BAA31002F512F /* Products */,
+				8826414BB1DB782C11E966EF /* Pods */,
+				60345F209569E4B99A9DC34C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -381,6 +398,29 @@
 			path = Supports;
 			sourceTree = "<group>";
 		};
+		60345F209569E4B99A9DC34C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD76D215E41B9E87EA711F /* Pods_octopus_reader.framework */,
+				13BE49F46670CB2F56F20865 /* Pods_octopus_reader_octopus_readerUITests.framework */,
+				CAA0703AAA42CD194A442677 /* Pods_octopus_readerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8826414BB1DB782C11E966EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43B5755580FC3803341A797A /* Pods-octopus-reader.debug.xcconfig */,
+				EC331DE03921F15186D9FF4B /* Pods-octopus-reader.release.xcconfig */,
+				EF03069AC19170A13F9BF67F /* Pods-octopus-reader-octopus-readerUITests.debug.xcconfig */,
+				2D8A6115309529496DED8C55 /* Pods-octopus-reader-octopus-readerUITests.release.xcconfig */,
+				7D8C38E25619973C0F2490EB /* Pods-octopus-readerTests.debug.xcconfig */,
+				A9AF5B5D146C9A58E8E91729 /* Pods-octopus-readerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -388,9 +428,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E254907233BAA31002F512F /* Build configuration list for PBXNativeTarget "octopus-reader" */;
 			buildPhases = (
+				B0CEB7A1CABCDB3634807B56 /* [CP] Check Pods Manifest.lock */,
 				0E2548D6233BAA31002F512F /* Sources */,
 				0E2548D7233BAA31002F512F /* Frameworks */,
 				0E2548D8233BAA31002F512F /* Resources */,
+				E51A437904836B47274CF0E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,6 +447,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E25490A233BAA31002F512F /* Build configuration list for PBXNativeTarget "octopus-readerTests" */;
 			buildPhases = (
+				1F2FD2F03C671A4B434ADD96 /* [CP] Check Pods Manifest.lock */,
 				0E2548EF233BAA31002F512F /* Sources */,
 				0E2548F0233BAA31002F512F /* Frameworks */,
 				0E2548F1233BAA31002F512F /* Resources */,
@@ -423,9 +466,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E25490D233BAA31002F512F /* Build configuration list for PBXNativeTarget "octopus-readerUITests" */;
 			buildPhases = (
+				58F7DEB82D76732D74A2A85C /* [CP] Check Pods Manifest.lock */,
 				0E2548FA233BAA31002F512F /* Sources */,
 				0E2548FB233BAA31002F512F /* Frameworks */,
 				0E2548FC233BAA31002F512F /* Resources */,
+				228EA7233AB1E202FC48EA24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -510,6 +555,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F2FD2F03C671A4B434ADD96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-octopus-readerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		228EA7233AB1E202FC48EA24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-octopus-reader-octopus-readerUITests/Pods-octopus-reader-octopus-readerUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-octopus-reader-octopus-readerUITests/Pods-octopus-reader-octopus-readerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58F7DEB82D76732D74A2A85C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-octopus-reader-octopus-readerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0CEB7A1CABCDB3634807B56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-octopus-reader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E51A437904836B47274CF0E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-octopus-reader/Pods-octopus-reader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-octopus-reader/Pods-octopus-reader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E2548D6233BAA31002F512F /* Sources */ = {
@@ -751,6 +889,7 @@
 		};
 		0E254908233BAA31002F512F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B5755580FC3803341A797A /* Pods-octopus-reader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "octopus-reader/octopus-reader.entitlements";
@@ -770,6 +909,7 @@
 		};
 		0E254909233BAA31002F512F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC331DE03921F15186D9FF4B /* Pods-octopus-reader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "octopus-reader/octopus-reader.entitlements";
@@ -789,6 +929,7 @@
 		};
 		0E25490B233BAA31002F512F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D8C38E25619973C0F2490EB /* Pods-octopus-readerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -811,6 +952,7 @@
 		};
 		0E25490C233BAA31002F512F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AF5B5D146C9A58E8E91729 /* Pods-octopus-readerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -833,6 +975,7 @@
 		};
 		0E25490E233BAA31002F512F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF03069AC19170A13F9BF67F /* Pods-octopus-reader-octopus-readerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -853,6 +996,7 @@
 		};
 		0E25490F233BAA31002F512F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8A6115309529496DED8C55 /* Pods-octopus-reader-octopus-readerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
