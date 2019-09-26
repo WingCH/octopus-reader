@@ -61,7 +61,4 @@ class ViewController: UIViewController, FeliCaReaderSessionDelegate {
         self.transitICCard = transitICCard
     }
     
-
-    
-    
 }

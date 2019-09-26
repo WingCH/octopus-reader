@@ -62,6 +62,7 @@
 		0E25497A233BAAB1002F512F /* JapanNFCReaderSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25494C233BAAB1002F512F /* JapanNFCReaderSessionDelegate.swift */; };
 		0E25497D233BB0AD002F512F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25497C233BB0AD002F512F /* ViewController.swift */; };
 		0E254984233C32CD002F512F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E254986233C32CD002F512F /* InfoPlist.strings */; };
+		0E588303233C6D09006C8E7B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E588302233C6D09006C8E7B /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		0E25497B233BACA6002F512F /* octopus-reader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "octopus-reader.entitlements"; sourceTree = "<group>"; };
 		0E25497C233BB0AD002F512F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E254985233C32CD002F512F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E588302233C6D09006C8E7B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,10 +198,10 @@
 		0E2548DC233BAA31002F512F /* octopus-reader */ = {
 			isa = PBXGroup;
 			children = (
+				0E588301233C6C3C006C8E7B /* Supports */,
 				0E25497B233BACA6002F512F /* octopus-reader.entitlements */,
 				0E254910233BAAB1002F512F /* TRETJapanNFCReader */,
-				0E2548DD233BAA31002F512F /* AppDelegate.swift */,
-				0E2548DF233BAA31002F512F /* SceneDelegate.swift */,
+				0E588302233C6D09006C8E7B /* HistoryViewController.swift */,
 				0E25497C233BB0AD002F512F /* ViewController.swift */,
 				0E2548E3233BAA31002F512F /* Main.storyboard */,
 				0E2548E9233BAA31002F512F /* Assets.xcassets */,
@@ -368,6 +370,15 @@
 				0E254945233BAAB1002F512F /* OctopusCardData.swift */,
 			);
 			path = Octopus;
+			sourceTree = "<group>";
+		};
+		0E588301233C6C3C006C8E7B /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				0E2548DD233BAA31002F512F /* AppDelegate.swift */,
+				0E2548DF233BAA31002F512F /* SceneDelegate.swift */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,6 +555,7 @@
 				0E254955233BAAB1002F512F /* DriversLicenseReaderError.swift in Sources */,
 				0E2548E0233BAA31002F512F /* SceneDelegate.swift in Sources */,
 				0E254957233BAAB1002F512F /* DriversLicenseReader.swift in Sources */,
+				0E588303233C6D09006C8E7B /* HistoryViewController.swift in Sources */,
 				0E254954233BAAB1002F512F /* DriversLicenseReaderExtensions.swift in Sources */,
 				0E25496C233BAAB1002F512F /* UnivCoopICPrepaidCard.swift in Sources */,
 				0E254950233BAAB1002F512F /* DriversLicenseExtensions.swift in Sources */,
