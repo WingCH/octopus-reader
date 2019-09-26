@@ -29,7 +29,6 @@ class HistoryViewController: UITableViewController, NSFetchedResultsControllerDe
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getData()
-        
     }
     
     override func viewDidLoad() {

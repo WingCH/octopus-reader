@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qcP-Lf-oFA">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +12,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="octopus_reader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9va-pz-lTZ">
-                                <rect key="frame" x="0.0" y="97" width="414" height="94"/>
+                                <rect key="frame" x="0.0" y="53" width="414" height="94"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY2-bw-P7x">
-                                <rect key="frame" x="0.0" y="717" width="414" height="96"/>
+                                <rect key="frame" x="0.0" y="591" width="414" height="96"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="USG-Fd-jVC"/>
@@ -35,11 +35,45 @@
                                     <action selector="reCheck" destination="BYZ-38-t0r" eventType="touchUpInside" id="kyv-We-ybu"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU2-hc-uO6">
+                                <rect key="frame" x="73" y="171" width="268" height="106"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="ASr-IP-BpE"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="If the balance is incorrect">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=",">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name=".PingFangHK-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" please go to the setting  change the Octopus issuance year.">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="IU2-hc-uO6" firstAttribute="leading" secondItem="KWp-Yv-ZZA" secondAttribute="leading" constant="73" id="FBY-mm-GvH"/>
                             <constraint firstItem="9va-pz-lTZ" firstAttribute="leading" secondItem="KWp-Yv-ZZA" secondAttribute="leading" id="NYQ-f5-IdG"/>
                             <constraint firstItem="tY2-bw-P7x" firstAttribute="trailing" secondItem="9va-pz-lTZ" secondAttribute="trailing" id="RlT-AR-SEm"/>
+                            <constraint firstItem="IU2-hc-uO6" firstAttribute="top" secondItem="9va-pz-lTZ" secondAttribute="bottom" constant="24" id="URo-0t-u4T"/>
+                            <constraint firstItem="IU2-hc-uO6" firstAttribute="centerX" secondItem="9va-pz-lTZ" secondAttribute="centerX" id="USA-gt-txX"/>
                             <constraint firstItem="KWp-Yv-ZZA" firstAttribute="trailing" secondItem="9va-pz-lTZ" secondAttribute="trailing" id="fKY-wq-sgc"/>
                             <constraint firstItem="9va-pz-lTZ" firstAttribute="top" secondItem="KWp-Yv-ZZA" secondAttribute="top" constant="53" id="ilW-Mg-lKo"/>
                             <constraint firstItem="tY2-bw-P7x" firstAttribute="bottom" secondItem="KWp-Yv-ZZA" secondAttribute="bottom" id="xsi-WF-T2a"/>
@@ -50,11 +84,13 @@
                     <tabBarItem key="tabBarItem" title="Scan" image="magnifyingglass" catalog="system" id="mW3-Eo-c7b"/>
                     <connections>
                         <outlet property="balance" destination="9va-pz-lTZ" id="EY0-iq-uII"/>
+                        <outlet property="balanceDescription" destination="IU2-hc-uO6" id="zH8-Cu-Xe8"/>
+                        <outlet property="checkButton" destination="tY2-bw-P7x" id="wzY-YF-5Wr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="123"/>
+            <point key="canvasLocation" x="1430.4347826086957" y="122.54464285714285"/>
         </scene>
         <!--Settings-->
         <scene sceneID="NWE-DU-lEz">
@@ -62,7 +98,7 @@
                 <navigationController id="ivy-bf-eFK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="list.bullet" catalog="system" id="J9f-0z-Yxn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="bpG-70-RXC">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -78,7 +114,7 @@
             <objects>
                 <viewController id="7lk-1T-pLX" customClass="SettingsViewController" customModule="octopus_reader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ba2-If-8jI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="SL0-u0-ajl"/>
@@ -95,7 +131,7 @@
             <objects>
                 <tableViewController id="9bv-cZ-Xk8" customClass="HistoryViewController" customModule="octopus_reader" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6fQ-Ja-tTO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -112,7 +148,7 @@
                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t7-tD-eYv">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t7-tD-eYv">
                                             <rect key="frame" x="36" y="22" width="272" height="36"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                             <nil key="textColor"/>
@@ -120,11 +156,11 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="7t7-tD-eYv" secondAttribute="trailing" constant="86" id="9jB-Fk-gTD"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7t7-tD-eYv" secondAttribute="trailing" constant="50" id="9jB-Fk-gTD"/>
                                         <constraint firstItem="KdH-Pt-Fze" firstAttribute="top" secondItem="xxh-2q-fdT" secondAttribute="topMargin" constant="37" id="B0A-fc-XAC"/>
-                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="KdH-Pt-Fze" secondAttribute="leading" constant="16" id="O8K-dR-APq"/>
+                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="KdH-Pt-Fze" secondAttribute="leading" id="O8K-dR-APq"/>
                                         <constraint firstItem="KdH-Pt-Fze" firstAttribute="bottom" secondItem="xxh-2q-fdT" secondAttribute="bottomMargin" id="TOK-gO-Kr8"/>
-                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="xxh-2q-fdT" secondAttribute="leadingMargin" constant="16" id="fa5-Za-le5"/>
+                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="xxh-2q-fdT" secondAttribute="leadingMargin" id="fa5-Za-le5"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="KdH-Pt-Fze" secondAttribute="trailing" constant="-3" id="iUk-Qr-dh7"/>
                                         <constraint firstItem="7t7-tD-eYv" firstAttribute="centerY" secondItem="xxh-2q-fdT" secondAttribute="centerY" id="o2U-TA-T44"/>
                                     </constraints>
