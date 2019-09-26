@@ -8,10 +8,17 @@
 
 import UIKit
 
+class HistoryCell: UITableViewCell{
+    
+    @IBOutlet weak var balance: UILabel!
+    @IBOutlet weak var date: UILabel!
+    
+}
+
 class HistoryViewController: UITableViewController {
     
     
-    var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl", "Petite Oyster", "For Kee Restaurant", "Po's Atelier", "Bourke Street Bakery", "Haigh's Chocolate", "Palomino Espresso", "Upstate", "Traif", "Graham Avenue Meats And Deli", "Waffle & Wolf", "Five Leaves", "Cafe Lore", "Confessional", "Barrafina", "Donostia", "Royal Oak", "CASK Pub and Kitchen"]
+    var restaurantNames = ["$00.00", "$00.00", "$00.00", "$00.00", "$00.00", "$00.00"]
     
 
     override func viewDidLoad() {
@@ -40,11 +47,15 @@ class HistoryViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cellIdentifier = "historyCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HistoryCell
         
         // Configure the cell...
-        cell.textLabel?.text = restaurantNames[indexPath.row]
-        cell.imageView?.image = UIImage(named: "restaurant")
+        cell.balance?.text = restaurantNames[indexPath.row]
+        cell.date?.text = "18:00 25/09/2019"
+        
+        
+        
+        
         
         return cell
     }

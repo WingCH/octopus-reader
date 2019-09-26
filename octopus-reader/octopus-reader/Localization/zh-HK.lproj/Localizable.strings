@@ -9,7 +9,7 @@
 "nfcReadingUnavailableAlertTitle" = "Scanning Not Supported";
 "nfcReadingUnavailableAlertMessage" = "This device doesn't support NFC scanning.";
 "nfcReaderSessionAlertMessage" = "Rest your iPhone on the bottom half of the card, as shown above.";
-"nfcTagReaderSessionDidInvalidateWithErrorAlertTitle" = "The session has been invalidated";
+"nfcTagReaderSessionDidInvalidateWithErrorAlertTitle" = "請再試多次!";
 "nfcTagReaderSessionDidDetectTagsMoreThan1TagIsDetectedMessage" = "More than 1 card is detected. Please remove all cards and try again.";
 "nfcTagReaderSessionConnectErrorMessage" = "Connection error. Please try again.";
 "nfcTagReaderSessionDifferentTagTypeErrorMessage" = "A card that is not to read is detected, please try again.";
@@ -25,4 +25,8 @@
 "nanaco" = "nanaco";
 "waon" = "WAON";
 "univCoopICPrepaid" = "Univ. Co-op";
-"octopus" = "Octopus";
+"octopus" = "八達通";
+
+"issuanceYear" = "發行年份";
+"after2017" = "2017年10月1日或之後發出";
+"before2017" = "2017年10月1日之前發出";

@@ -12,10 +12,16 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //The default octopus_type is old
+        let type = UserDefaults.string(forKey: .octopus_type)
+        if (type == nil) {
+            UserDefaults.set(value: User_Octopus_type.old.rawValue, forKey: .octopus_type)
+        }
         return true
     }
 

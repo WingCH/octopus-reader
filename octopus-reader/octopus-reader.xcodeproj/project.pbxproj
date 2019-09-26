@@ -63,6 +63,9 @@
 		0E25497D233BB0AD002F512F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25497C233BB0AD002F512F /* ViewController.swift */; };
 		0E254984233C32CD002F512F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E254986233C32CD002F512F /* InfoPlist.strings */; };
 		0E588303233C6D09006C8E7B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E588302233C6D09006C8E7B /* HistoryViewController.swift */; };
+		0E588305233C82D8006C8E7B /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E588304233C82D8006C8E7B /* BaseTabBarController.swift */; };
+		0E9A3671233C871C00BBFDF2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A3670233C871C00BBFDF2 /* SettingsViewController.swift */; };
+		0EDEDA3E233C9C93007072C7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEDA3D233C9C93007072C7 /* UserDefaults.swift */; };
 		221695958F9EB346F6206374 /* Pods_octopus_readerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA0703AAA42CD194A442677 /* Pods_octopus_readerTests.framework */; };
 		6E21851C554159A97E0C77CA /* Pods_octopus_reader_octopus_readerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BE49F46670CB2F56F20865 /* Pods_octopus_reader_octopus_readerUITests.framework */; };
 		EECE4555FA9A41FF0BD91D05 /* Pods_octopus_reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCD76D215E41B9E87EA711F /* Pods_octopus_reader.framework */; };
@@ -100,7 +103,6 @@
 		0E2548FE233BAA31002F512F /* octopus-readerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "octopus-readerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E254902233BAA31002F512F /* octopus_readerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = octopus_readerUITests.swift; sourceTree = "<group>"; };
 		0E254904233BAA31002F512F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E254912233BAAB1002F512F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0E254913233BAAB1002F512F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0E254916233BAAB1002F512F /* DriversLicenseCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriversLicenseCard.swift; sourceTree = "<group>"; };
 		0E254917233BAAB1002F512F /* DriversLicenseReaderSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriversLicenseReaderSessionDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,10 @@
 		0E25497C233BB0AD002F512F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E254985233C32CD002F512F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E588302233C6D09006C8E7B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0E588304233C82D8006C8E7B /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		0E9A3670233C871C00BBFDF2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0EDEDA3C233C92F4007072C7 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0EDEDA3D233C9C93007072C7 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		13BE49F46670CB2F56F20865 /* Pods_octopus_reader_octopus_readerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_octopus_reader_octopus_readerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D8A6115309529496DED8C55 /* Pods-octopus-reader-octopus-readerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octopus-reader-octopus-readerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-octopus-reader-octopus-readerUITests/Pods-octopus-reader-octopus-readerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		43B5755580FC3803341A797A /* Pods-octopus-reader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-octopus-reader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-octopus-reader/Pods-octopus-reader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,16 +221,17 @@
 		0E2548DC233BAA31002F512F /* octopus-reader */ = {
 			isa = PBXGroup;
 			children = (
+				0E9A3677233C927400BBFDF2 /* Localization */,
 				0E588301233C6C3C006C8E7B /* Supports */,
 				0E25497B233BACA6002F512F /* octopus-reader.entitlements */,
 				0E254910233BAAB1002F512F /* TRETJapanNFCReader */,
 				0E588302233C6D09006C8E7B /* HistoryViewController.swift */,
 				0E25497C233BB0AD002F512F /* ViewController.swift */,
+				0E9A3670233C871C00BBFDF2 /* SettingsViewController.swift */,
 				0E2548E3233BAA31002F512F /* Main.storyboard */,
 				0E2548E9233BAA31002F512F /* Assets.xcassets */,
 				0E2548EB233BAA31002F512F /* LaunchScreen.storyboard */,
 				0E2548EE233BAA31002F512F /* Info.plist */,
-				0E254986233C32CD002F512F /* InfoPlist.strings */,
 				0E2548E6233BAA31002F512F /* octopus_reader.xcdatamodeld */,
 			);
 			path = "octopus-reader";
@@ -251,7 +258,6 @@
 		0E254910233BAAB1002F512F /* TRETJapanNFCReader */ = {
 			isa = PBXGroup;
 			children = (
-				0E254911233BAAB1002F512F /* Localizable.strings */,
 				0E254914233BAAB1002F512F /* ISO14443 */,
 				0E254920233BAAB1002F512F /* FeliCa */,
 				0E254947233BAAB1002F512F /* JapanNFCReaderError.swift */,
@@ -394,8 +400,19 @@
 			children = (
 				0E2548DD233BAA31002F512F /* AppDelegate.swift */,
 				0E2548DF233BAA31002F512F /* SceneDelegate.swift */,
+				0E588304233C82D8006C8E7B /* BaseTabBarController.swift */,
+				0EDEDA3D233C9C93007072C7 /* UserDefaults.swift */,
 			);
 			path = Supports;
+			sourceTree = "<group>";
+		};
+		0E9A3677233C927400BBFDF2 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				0E254911233BAAB1002F512F /* Localizable.strings */,
+				0E254986233C32CD002F512F /* InfoPlist.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		60345F209569E4B99A9DC34C /* Frameworks */ = {
@@ -512,7 +529,7 @@
 			knownRegions = (
 				en,
 				Base,
-				ja,
+				"zh-HK",
 			);
 			mainGroup = 0E2548D1233BAA31002F512F;
 			productRefGroup = 0E2548DB233BAA31002F512F /* Products */;
@@ -659,6 +676,7 @@
 				0E254964233BAAB1002F512F /* WaonCardData.swift in Sources */,
 				0E254978233BAAB1002F512F /* JapanNFCReader.swift in Sources */,
 				0E254953233BAAB1002F512F /* DriversLicenseReaderReadFunctions.swift in Sources */,
+				0EDEDA3E233C9C93007072C7 /* UserDefaults.swift in Sources */,
 				0E254961233BAAB1002F512F /* RakutenEdyCardData.swift in Sources */,
 				0E25495D233BAAB1002F512F /* FeliCaReaderSessionDelegate.swift in Sources */,
 				0E25495E233BAAB1002F512F /* RakutenEdyCard.swift in Sources */,
@@ -668,6 +686,7 @@
 				0E25494E233BAAB1002F512F /* DriversLicenseCard.swift in Sources */,
 				0E254963233BAAB1002F512F /* WaonCardItemType.swift in Sources */,
 				0E25495F233BAAB1002F512F /* RakutenEdyReader.swift in Sources */,
+				0E588305233C82D8006C8E7B /* BaseTabBarController.swift in Sources */,
 				0E25496F233BAAB1002F512F /* FeliCa+NFCFeliCaTag.swift in Sources */,
 				0E254952233BAAB1002F512F /* DriversLicenseReaderCommands.swift in Sources */,
 				0E254959233BAAB1002F512F /* TransitICReader.swift in Sources */,
@@ -686,6 +705,7 @@
 				0E25494F233BAAB1002F512F /* DriversLicenseReaderSessionDelegate.swift in Sources */,
 				0E25496E233BAAB1002F512F /* UnivCoopICPrepaidReader.swift in Sources */,
 				0E254958233BAAB1002F512F /* TransitICCard.swift in Sources */,
+				0E9A3671233C871C00BBFDF2 /* SettingsViewController.swift in Sources */,
 				0E254967233BAAB1002F512F /* NanacoReader.swift in Sources */,
 				0E25497A233BAAB1002F512F /* JapanNFCReaderSessionDelegate.swift in Sources */,
 				0E254966233BAAB1002F512F /* WaonReader.swift in Sources */,
@@ -756,8 +776,8 @@
 		0E254911233BAAB1002F512F /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0E254912233BAAB1002F512F /* ja */,
 				0E254913233BAAB1002F512F /* en */,
+				0EDEDA3C233C92F4007072C7 /* zh-HK */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -777,6 +797,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -837,6 +858,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

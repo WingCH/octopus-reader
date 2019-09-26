@@ -16,8 +16,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$00.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9va-pz-lTZ">
-                                <rect key="frame" x="0.0" y="97" width="375" height="116.66666666666669"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="100"/>
+                                <rect key="frame" x="0.0" y="97" width="375" height="93.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -52,20 +52,38 @@
             <point key="canvasLocation" x="1433" y="123"/>
         </scene>
         <!--Settings-->
+        <scene sceneID="NWE-DU-lEz">
+            <objects>
+                <navigationController id="ivy-bf-eFK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="list.bullet" catalog="system" id="J9f-0z-Yxn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="bpG-70-RXC">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7lk-1T-pLX" kind="relationship" relationship="rootViewController" id="Mjb-k2-8BT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAF-uT-o3j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="918"/>
+        </scene>
+        <!--Settings-->
         <scene sceneID="dzp-yL-FLG">
             <objects>
-                <viewController id="7lk-1T-pLX" sceneMemberID="viewController">
+                <viewController id="7lk-1T-pLX" customClass="SettingsViewController" customModule="octopus_reader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ba2-If-8jI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="SL0-u0-ajl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="list.dash" catalog="system" id="Uxd-EZ-R13"/>
+                    <tabBarItem key="tabBarItem" title="" id="Uxd-EZ-R13"/>
+                    <navigationItem key="navigationItem" title="Settings" id="tcg-lB-biU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mi2-Ha-HqW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="865"/>
+            <point key="canvasLocation" x="2234" y="918"/>
         </scene>
         <!--History-->
         <scene sceneID="fqp-VW-WZt">
@@ -76,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="80" id="Sj9-Bh-2kR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="80" id="Sj9-Bh-2kR" customClass="HistoryCell" customModule="octopus_reader" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sj9-Bh-2kR" id="xxh-2q-fdT">
@@ -106,6 +124,10 @@
                                         <constraint firstItem="7t7-tD-eYv" firstAttribute="centerY" secondItem="xxh-2q-fdT" secondAttribute="centerY" id="o2U-TA-T44"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="balance" destination="7t7-tD-eYv" id="gYx-fl-ANf"/>
+                                    <outlet property="date" destination="KdH-Pt-Fze" id="kde-Fv-tdA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -119,19 +141,24 @@
             </objects>
             <point key="canvasLocation" x="1432.8" y="-605.17241379310349"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Base Tab Bar Controller-->
         <scene sceneID="JNm-zO-l9d">
             <objects>
-                <tabBarController id="qcP-Lf-oFA" sceneMemberID="viewController">
+                <tabBarController id="qcP-Lf-oFA" customClass="BaseTabBarController" customModule="octopus_reader" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n0L-qv-kKZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="defaultIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="9bv-cZ-Xk8" kind="relationship" relationship="viewControllers" id="7ar-Mn-Q84"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="LK7-LM-uud"/>
-                        <segue destination="7lk-1T-pLX" kind="relationship" relationship="viewControllers" id="NOr-zG-qJA"/>
+                        <segue destination="ivy-bf-eFK" kind="relationship" relationship="viewControllers" id="sfv-dT-3pt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bew-2S-aZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -141,7 +168,7 @@
     </scenes>
     <resources>
         <image name="book" catalog="system" width="64" height="52"/>
-        <image name="list.dash" catalog="system" width="64" height="44"/>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="magnifyingglass" catalog="system" width="64" height="60"/>
     </resources>
 </document>
