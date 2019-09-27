@@ -30,5 +30,6 @@
 "issuanceYear" = "Issuance Year";
 "after2017" = "on or after 1 October 2017";
 "before2017" = "before 1 October 2017";
+"footer" = "This causes the balance to be encoded differently.";
 "check" = "Check";
 "description" = "If the balance is incorrect\n please go to the setting  change the Octopus issuance year.";

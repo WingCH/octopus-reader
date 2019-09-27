@@ -25,7 +25,7 @@ class SettingsViewController: FormViewController {
         
         
         
-        form +++ Section(header: NSLocalizedString("octopus", comment: "") , footer: "Footer Title")
+        form +++ Section(header: NSLocalizedString("octopus", comment: "") , footer: NSLocalizedString("footer", comment: ""))
             <<< ActionSheetRow<String>() {
                 $0.title = NSLocalizedString("issuanceYear", comment: "")
                 $0.selectorTitle = NSLocalizedString("issuanceYear", comment: "")

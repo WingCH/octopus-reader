@@ -64,6 +64,7 @@
 		0E254984233C32CD002F512F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E254986233C32CD002F512F /* InfoPlist.strings */; };
 		0E588303233C6D09006C8E7B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E588302233C6D09006C8E7B /* HistoryViewController.swift */; };
 		0E588305233C82D8006C8E7B /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E588304233C82D8006C8E7B /* BaseTabBarController.swift */; };
+		0E84EDC7233DA3C100548B89 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E84EDC6233DA3C100548B89 /* NetworkExtension.framework */; };
 		0E9A3671233C871C00BBFDF2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A3670233C871C00BBFDF2 /* SettingsViewController.swift */; };
 		0EDEDA3E233C9C93007072C7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEDA3D233C9C93007072C7 /* UserDefaults.swift */; };
 		221695958F9EB346F6206374 /* Pods_octopus_readerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA0703AAA42CD194A442677 /* Pods_octopus_readerTests.framework */; };
@@ -154,6 +155,8 @@
 		0E254985233C32CD002F512F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0E588302233C6D09006C8E7B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		0E588304233C82D8006C8E7B /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		0E84EDC5233D131100548B89 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		0E84EDC6233DA3C100548B89 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		0E9A3670233C871C00BBFDF2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0EDEDA3C233C92F4007072C7 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0EDEDA3D233C9C93007072C7 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECE4555FA9A41FF0BD91D05 /* Pods_octopus_reader.framework in Frameworks */,
+				0E84EDC7233DA3C100548B89 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +422,7 @@
 		60345F209569E4B99A9DC34C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E84EDC6233DA3C100548B89 /* NetworkExtension.framework */,
 				CDCD76D215E41B9E87EA711F /* Pods_octopus_reader.framework */,
 				13BE49F46670CB2F56F20865 /* Pods_octopus_reader_octopus_readerUITests.framework */,
 				CAA0703AAA42CD194A442677 /* Pods_octopus_readerTests.framework */,
@@ -786,6 +791,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0E254985233C32CD002F512F /* en */,
+				0E84EDC5233D131100548B89 /* zh-HK */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
