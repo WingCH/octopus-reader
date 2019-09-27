@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  octopus-reader
+
+  Created by CHAN Hong Wing on 25/9/2019.
+  Copyright © 2019 CHAN Hong Wing. All rights reserved.
+*/
+CFBundleDisplayName = "O-Card Reader";
