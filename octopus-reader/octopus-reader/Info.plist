@@ -66,7 +66,5 @@
 	<array>
 		<string>8008</string>
 	</array>
-	<key>com.apple.developer.nfc.readersession.formats</key>
-	<string>NDEF</string>
 </dict>
 </plist>
