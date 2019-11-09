@@ -43,24 +43,10 @@
                                     <constraint firstAttribute="height" constant="106" id="ZWV-Wn-b9W"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="If the balance is incorrect">
+                                    <fragment content="If the balance is incorrect, please go to the setting  change the Octopus issuance year.">
                                         <attributes>
                                             <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=",">
-                                        <attributes>
-                                            <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="14" name=".PingFangHK-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" please go to the setting  change the Octopus issuance year.">
-                                        <attributes>
-                                            <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -144,7 +130,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18:00 25/09/2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdH-Pt-Fze">
-                                            <rect key="frame" x="303.66666666666669" y="48" width="93.333333333333314" height="21"/>
+                                            <rect key="frame" x="303.33333333333331" y="48" width="93.666666666666686" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -157,14 +143,12 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="KdH-Pt-Fze" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xxh-2q-fdT" secondAttribute="leading" constant="303.5" id="9Nz-ni-r7a"/>
-                                        <constraint firstItem="KdH-Pt-Fze" firstAttribute="top" secondItem="xxh-2q-fdT" secondAttribute="topMargin" constant="37" id="B0A-fc-XAC"/>
-                                        <constraint firstAttribute="trailing" secondItem="KdH-Pt-Fze" secondAttribute="trailing" constant="17" id="Rhl-xB-ux9"/>
-                                        <constraint firstItem="KdH-Pt-Fze" firstAttribute="bottom" secondItem="xxh-2q-fdT" secondAttribute="bottomMargin" id="TOK-gO-Kr8"/>
-                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="xxh-2q-fdT" secondAttribute="leadingMargin" constant="18" id="doF-pq-vcu"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="KdH-Pt-Fze" secondAttribute="trailing" constant="-3" id="iUk-Qr-dh7"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7t7-tD-eYv" secondAttribute="trailing" constant="268.5" id="p0E-la-7Tk"/>
-                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="centerY" secondItem="xxh-2q-fdT" secondAttribute="centerY" id="rSc-9V-Xq4"/>
+                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="centerY" secondItem="xxh-2q-fdT" secondAttribute="centerY" id="EvW-hR-jWo"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KdH-Pt-Fze" secondAttribute="trailing" constant="-3.0000000000000568" id="XzE-eO-TjD"/>
+                                        <constraint firstItem="KdH-Pt-Fze" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7t7-tD-eYv" secondAttribute="trailing" constant="8" symbolic="YES" id="gqG-Cx-1Rr"/>
+                                        <constraint firstItem="7t7-tD-eYv" firstAttribute="leading" secondItem="xxh-2q-fdT" secondAttribute="leadingMargin" constant="18" id="lVp-Kz-uap"/>
+                                        <constraint firstItem="KdH-Pt-Fze" firstAttribute="top" secondItem="xxh-2q-fdT" secondAttribute="topMargin" constant="37" id="swP-jx-Jum"/>
+                                        <constraint firstItem="KdH-Pt-Fze" firstAttribute="bottom" secondItem="xxh-2q-fdT" secondAttribute="bottomMargin" id="vY6-Mf-1GP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -182,7 +166,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asv-bX-6Ij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1431.8840579710145" y="-605.35714285714278"/>
+            <point key="canvasLocation" x="1430.4347826086957" y="-605.35714285714278"/>
         </scene>
         <!--Base Tab Bar Controller-->
         <scene sceneID="JNm-zO-l9d">
